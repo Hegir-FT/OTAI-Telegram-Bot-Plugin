@@ -1,5 +1,5 @@
 
-![OTAIBot - OTAI Telegram Bot Plugin](OTAIbot.png)
+![OTAIBot - OTAI Telegram Bot Plugin](OTAIBot.png)
 
 ##  О проекте
 
