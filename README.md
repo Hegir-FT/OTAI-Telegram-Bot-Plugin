@@ -3,7 +3,7 @@
 
 ##  О проекте
 
-**OTAIB** - плагин для [OpenTess AI (OTAI)](https://github.com/Tessachok12/Open-Tess-AI), добавляющий поддержку Telegram Bot API. Позволяет общаться с OTAI через Telegram, используя словарь, шаблоны и response bank.
+**OTAIB** - плагин для [Open Tess AI (OTAI)](https://github.com/Tessachok12/Open-Tess-AI), добавляющий поддержку Telegram Bot API. Позволяет общаться с OTAI через Telegram, используя словарь, шаблоны и response bank.
 
 ---
 
@@ -28,18 +28,15 @@ export TELEGRAM_BOT_TOKEN="ваш_токен"
 ### Структура файлов
 
 ```
-project/
+Open Tess AI/
 ├── plugins/
 │   ├── telegram_bot/
-│   │   ├── plugin.py          # OTAIB
-│   │   ├── dictionary.json    # Локальный словарь
-│   │   ├── templates.json     # Локальные шаблоны
-│   │   └── response_bank.py   # Локальный response bank
-│   └── dictionary_and_templates/
-│       ├── dictionary.json    # Общий словарь
-│       ├── templates.json     # Общие шаблоны
-│       └── response_bank.py   # Общий response bank
-├── core.py                    # OTAI
+│   │   └── plugin.py          # OTAI Bot Plugin 
+│   └── dictionary_and_templates/(ВАЖНО ИМЕТЬ ДЛЯ РАБОТЫ ПЛАГИНА)
+│       ├── dictionary.json    # Словарь который использует OTAIB
+│       ├── templates.json     # Шаблоны который использует OTAIB
+│       └── response_bank.py   # Response bank который использует 
+├── core.py                    # Сам OTAI
 ├── config.py
 ├── model.py
 ├── plugin_loader.py
@@ -104,5 +101,3 @@ OTAIB: Сегодня машина работает. (из словаря и ш�
 MIT License
 
 ---
-
-```
